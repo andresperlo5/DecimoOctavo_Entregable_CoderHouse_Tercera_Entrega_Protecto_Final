@@ -1,0 +1,20 @@
+.previewImagen{       
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid white;
+    outline: none;
+}
+
+.imagenPrev{
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    border: 2px black solid;
+}
+
+.borderInputImg{
+    outline: none;
+}
