@@ -1,5 +1,4 @@
 const { Schema } = require('mongoose')
-
 const CartSchema = new Schema({
     userId: {
         type: Schema.Types.ObjectId,
@@ -14,5 +13,4 @@ const CartSchema = new Schema({
         trim: true
     }
 })
-
 module.exports = CartSchema

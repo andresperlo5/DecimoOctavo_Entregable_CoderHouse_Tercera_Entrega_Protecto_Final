@@ -41,14 +41,11 @@ function AdminPages() {
         const res = await axios.put(`http://localhost:3001/api/v1/productos/${idProd}/`, {
             nombre, descripcion, foto, precio, stock, timestamp, codigo
         })
-      
         GetProducts()
-        console.log(res);
     }
 
     const handleDelete = (e) => {
         const idProd = e.target.id
-        console.log('idProdDelete', idProd);
         Swal.fire({
             title: 'Estas Seguro Que Quiere Eliminar Este Producto?',
             text: "¡No podrás revertir esta accion!",
@@ -77,7 +74,7 @@ function AdminPages() {
     }, [])
 
     const productos = products.map(p =>
-        <div key={p._id} className="card" style={{ width: '100%' }}>
+        <div key={p._id ? p._id : p.id} className="card" style={{ width: '100%' }}>
             <img src={p.foto} className="card-img-top" alt="..." style={{ height: '18rem', border: '1px solid grey' }} />
             <div className="card-body">
                 <h5 className="card-title">{p.nombre}</h5>
@@ -92,7 +89,7 @@ function AdminPages() {
 
                         </div>
                         <div>
-                            <button type="submit" className='btn btn-danger' id={p._id} onClick={handleDelete}>Eliminar</button>
+                            <button type="submit" className='btn btn-danger' id={p._id ? p._id : p.id} onClick={handleDelete}>Eliminar</button>
                         </div>
                     </div>
                 </div>

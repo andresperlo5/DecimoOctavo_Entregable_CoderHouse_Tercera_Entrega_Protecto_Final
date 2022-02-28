@@ -32,16 +32,13 @@ function Carrito() {
     }
 
     const handleDeleteOneProduct = async (e) => {
-        console.log('idSeleccionado', e.target.id)
         const idProd = e.target.id
         const res = await axios.delete(`http://localhost:3001/api/v1/carritos/${idCart}/productos/${idProd}`)
         GetProductsCart()
-        console.log(res);
     }
 
     const handlePricexCant = (values) => {
         const { price, id, count } = values
-        console.log(values)
         let resultado = 0
         resultado = Number(price) * count
         return resultado
@@ -49,7 +46,6 @@ function Carrito() {
 
     const handleMerCadoPaGo = async () => {
         const res = await axios.post(`http://localhost:3001/api/v1/carritos/${idCart}/${idUser}/payCart`, {products})
-        console.log('res', res)
     }
 
     useEffect(() => {

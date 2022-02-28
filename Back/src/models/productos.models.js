@@ -1,5 +1,4 @@
 const { Schema } = require('mongoose')
-
 const ProductSchema = new Schema({
     nombre: {
         type: String,
@@ -30,5 +29,4 @@ const ProductSchema = new Schema({
         trim: true
     }
 })
-
 module.exports = ProductSchema

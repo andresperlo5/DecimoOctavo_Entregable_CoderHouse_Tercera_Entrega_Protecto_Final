@@ -1,5 +1,4 @@
 const { Schema } = require('mongoose')
-
 const UserSchema = new Schema({
     carritoID: {
         type: Schema.Types.ObjectId,
@@ -26,8 +25,7 @@ const UserSchema = new Schema({
     },
     foto: {
         type: String,
-        trim: true,
-        required: true
+        trim: true
     },
     usuario: {
         type: String,
@@ -40,13 +38,10 @@ const UserSchema = new Schema({
         trim: true,
         required: true
     },
-
     admin: {
         type: Boolean,
         default: false
     },
-
     token: [String]
 })
-
 module.exports = UserSchema

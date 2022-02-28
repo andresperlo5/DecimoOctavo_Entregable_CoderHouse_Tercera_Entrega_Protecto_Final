@@ -68,8 +68,8 @@ function NavbarHome() {
         e.preventDefault()
         setIsLoading(true)
         const res = await axios.post('http://localhost:3001/api/v1/usuarios/login', { usuario, contrasenia })
-        console.log('res', res)
         if (res.data.msg) {
+            setIsLoading(false)
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...Error',

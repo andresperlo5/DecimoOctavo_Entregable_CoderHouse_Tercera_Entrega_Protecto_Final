@@ -1,0 +1,28 @@
+[2022-02-27T08:49:13.924] [ERROR] file - ReferenceError: usuario is not defined
+    at exports.RegisterUser (C:\Users\Usuario\Desktop\CoderHouse Andres\Entregables\Entregables Obligatorios\Proyecto Final CoderHouse\Tercera Entrega Proyecto Final\Back\src\controllers\usuarios.controllers.js:44:57)
+    at Layer.handle [as handle_request] (C:\Users\Usuario\Desktop\CoderHouse Andres\Entregables\Entregables Obligatorios\Proyecto Final CoderHouse\Tercera Entrega Proyecto Final\Back\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Usuario\Desktop\CoderHouse Andres\Entregables\Entregables Obligatorios\Proyecto Final CoderHouse\Tercera Entrega Proyecto Final\Back\node_modules\express\lib\router\route.js:137:13)
+    at middleware (C:\Users\Usuario\Desktop\CoderHouse Andres\Entregables\Entregables Obligatorios\Proyecto Final CoderHouse\Tercera Entrega Proyecto Final\Back\node_modules\express-validator\src\middlewares\check.js:16:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2022-02-27T08:51:41.725] [ERROR] file - ReferenceError: usuario is not defined
+    at exports.RegisterUser (C:\Users\Usuario\Desktop\CoderHouse Andres\Entregables\Entregables Obligatorios\Proyecto Final CoderHouse\Tercera Entrega Proyecto Final\Back\src\controllers\usuarios.controllers.js:64:22)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2022-02-27T08:55:25.724] [ERROR] file - Error: No recipients defined
+    at SMTPConnection._formatError (C:\Users\Usuario\Desktop\CoderHouse Andres\Entregables\Entregables Obligatorios\Proyecto Final CoderHouse\Tercera Entrega Proyecto Final\Back\node_modules\nodemailer\lib\smtp-connection\index.js:784:19)
+    at SMTPConnection._setEnvelope (C:\Users\Usuario\Desktop\CoderHouse Andres\Entregables\Entregables Obligatorios\Proyecto Final CoderHouse\Tercera Entrega Proyecto Final\Back\node_modules\nodemailer\lib\smtp-connection\index.js:1001:34)
+    at SMTPConnection.send (C:\Users\Usuario\Desktop\CoderHouse Andres\Entregables\Entregables Obligatorios\Proyecto Final CoderHouse\Tercera Entrega Proyecto Final\Back\node_modules\nodemailer\lib\smtp-connection\index.js:615:14)
+    at sendMessage (C:\Users\Usuario\Desktop\CoderHouse Andres\Entregables\Entregables Obligatorios\Proyecto Final CoderHouse\Tercera Entrega Proyecto Final\Back\node_modules\nodemailer\lib\smtp-transport\index.js:227:28)
+    at C:\Users\Usuario\Desktop\CoderHouse Andres\Entregables\Entregables Obligatorios\Proyecto Final CoderHouse\Tercera Entrega Proyecto Final\Back\node_modules\nodemailer\lib\smtp-transport\index.js:285:25
+    at SMTPConnection._actionAUTHComplete (C:\Users\Usuario\Desktop\CoderHouse Andres\Entregables\Entregables Obligatorios\Proyecto Final CoderHouse\Tercera Entrega Proyecto Final\Back\node_modules\nodemailer\lib\smtp-connection\index.js:1550:9)
+    at SMTPConnection.<anonymous> (C:\Users\Usuario\Desktop\CoderHouse Andres\Entregables\Entregables Obligatorios\Proyecto Final CoderHouse\Tercera Entrega Proyecto Final\Back\node_modules\nodemailer\lib\smtp-connection\index.js:1725:22)
+    at SMTPConnection._processResponse (C:\Users\Usuario\Desktop\CoderHouse Andres\Entregables\Entregables Obligatorios\Proyecto Final CoderHouse\Tercera Entrega Proyecto Final\Back\node_modules\nodemailer\lib\smtp-connection\index.js:947:20)
+    at SMTPConnection._onData (C:\Users\Usuario\Desktop\CoderHouse Andres\Entregables\Entregables Obligatorios\Proyecto Final CoderHouse\Tercera Entrega Proyecto Final\Back\node_modules\nodemailer\lib\smtp-connection\index.js:749:14)
+    at TLSSocket.SMTPConnection._onSocketData (C:\Users\Usuario\Desktop\CoderHouse Andres\Entregables\Entregables Obligatorios\Proyecto Final CoderHouse\Tercera Entrega Proyecto Final\Back\node_modules\nodemailer\lib\smtp-connection\index.js:189:44)
+    at TLSSocket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:284:9)
+    at TLSSocket.Readable.push (_stream_readable.js:223:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:188:23) {
+  code: 'EENVELOPE',
+  command: 'API'
+}
