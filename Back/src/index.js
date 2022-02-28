@@ -10,8 +10,8 @@ const cluster = require('cluster')
 const { cpus } = require('os')
 
 const PORT = process.argv[2] || process.env.PORT || 3001
-const modoCluster = process.argv[3] === 'CLUSTER'
-const herokuProd = process.env.NODE_ENV === 'PROD' 
+const modoCluster = process.argv[3] === 'CLUSTER' || 'CLUSTER'
+const herokuProd = process.env.NODE_ENV === 'PROD' || 'PROD'
 
 if(modoCluster && cluster.isMaster && herokuProd){
     const cpusNumber = cpus().length
